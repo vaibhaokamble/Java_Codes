@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class='container'>
+		<h2>Create Account</h2>
+		<form name='signupForm' action='register' method='POST'>
+			<input type='text' name='fullname' class="control"
+				placeholder='Full Name' required /><br> <br> <input
+				type='text' name='username' class='control' placeholder='Username'
+				required /><br> <br> <input type='email' name='email'
+				class='control' placeholder='Email' required /><br> <br>
+			<input type='password' name='password' class='control'
+				placeholder='Password (min 8 characters)' required minlength="8" /><br>
+			<br> <input type='password' name='confirmPassword'
+				class='control' placeholder='Confirm Password' required /><br>
+			<br> <input type='submit' value='Sign Up' class='control' />
+		</form>
+		<p>
+			Already have an account? <a href="login.html">Login here</a>
+		</p>
+	</div>
+</body>
+</html>

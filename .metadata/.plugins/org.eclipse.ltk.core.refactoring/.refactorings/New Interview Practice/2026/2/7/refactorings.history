@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;vaibhao.vk.sdfk.java&apos; to &apos;LongestSubstring.java&apos;&#x0D;&#x0A;- Original project: &apos;New Interview Practice&apos;&#x0D;&#x0A;- Original element: &apos;vaibhao.vk.sdfk.java&apos;&#x0D;&#x0A;- Renamed element: &apos;vaibhao.vk.LongestSubstring.java&apos;" description="Rename compilation unit &apos;sdfk.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;vaibhao.vk{sdfk.java" name="LongestSubstring.java" references="false" stamp="1770532488063" version="1.0"/>
+</session>

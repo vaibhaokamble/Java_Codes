@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<script>
+	// Check for error parameter in URL
+	window.onload = function() {
+		const urlParams = new URLSearchParams(window.location.search);
+		if (urlParams.has('error')) {
+			document.getElementById("error").style.display = "block";
+		}
+	}
+</script>
+<style>
+#error {
+	color: red;
+	display: none;
+}
+</style>
+</head>
+<body>
+	<h2>Login</h2>
+	<p id="error">Please enter a username!</p>
+	<form action="login" method="post">
+		Username: <input type="text" name="username" required> <input
+			type="submit" value="Login">
+	</form>
+</body>
+</html>

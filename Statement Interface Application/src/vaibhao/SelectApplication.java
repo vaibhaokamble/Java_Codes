@@ -1,0 +1,29 @@
+package vaibhao;
+
+import java.sql.*;
+import java.util.*;
+
+public class SelectApplication {
+
+	public static void main(String[] args) throws Exception {
+		com.mysql.cj.jdbc.Driver d = new com.mysql.cj.jdbc.Driver();
+		DriverManager.registerDriver(d);
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/eclipse", "vaibhao", "vaibhaovk");
+		if (conn != null) {
+			Scanner v = new Scanner(System.in);
+			System.out.println("Enter the name address");
+			String name = v.nextLine();
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery("select *from register where name     ='" + name + "'");
+			if (rs.next()) {
+				System.out.println(rs.getString(1) + "\t\t" + rs.getString(2) + "\t\t" + rs.getString(3));
+			} else {
+				System.out.println("Record not found");
+			}
+		} else {
+			System.out.println("Not connected");
+		}
+
+	}
+
+}

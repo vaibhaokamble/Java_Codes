@@ -1,0 +1,8 @@
+{
+  "powermode.enabled": true,
+  "powermode.presets": "flames",
+  "powermode.combo.timeout": 1,
+  "powermode.combo.timerEnabled": "hide",
+  "powermode.explosions.enabled": true,
+  "powermode.combo.counterEnabled": "hide"
+}
